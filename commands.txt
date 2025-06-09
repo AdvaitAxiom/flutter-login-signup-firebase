@@ -1,0 +1,3 @@
+flutter create .
+flutter pub add firebase_core firebase_auth
+mkdir -p lib/screens lib/services lib/widgets
