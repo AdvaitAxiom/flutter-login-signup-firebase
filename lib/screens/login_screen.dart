@@ -56,6 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 },
               ),
               const SizedBox(height: 20.0),
+              // After the Sign In button and before the error text
               ElevatedButton(
                 child: const Text('Sign In'),
                 onPressed: () async {
@@ -71,6 +72,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     }
                   }
                 },
+              ),
+              const SizedBox(height: 12.0),
+              TextButton(
+                child: const Text('Need an account? Register here'),
+                onPressed: () => widget.toggleView(),
               ),
               const SizedBox(height: 12.0),
               Text(
